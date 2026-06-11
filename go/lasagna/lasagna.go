@@ -2,15 +2,16 @@ package lasagna
 
 // TODO: define the 'OvenTime' constant
 
+const OvenTime int = 40
+
 // RemainingOvenTime returns the remaining minutes based on the `actual` minutes already in the oven.
 func RemainingOvenTime(actualMinutesInOven int) int {
-	const OvenTime = 20
 	return OvenTime - actualMinutesInOven
 }
 
 // PreparationTime calculates the time needed to prepare the lasagna based on the amount of layers.
 func PreparationTime(numberOfLayers int) int {
-	const PreparationTimePerLayer = 2
+	const PreparationTimePerLayer int = 2
 	return numberOfLayers * PreparationTimePerLayer
 }
 
