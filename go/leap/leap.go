@@ -11,5 +11,14 @@ func IsLeapYear(year int) bool {
 	// Then remove all the stock comments.
 	// They're here to help you get started but they only clutter a finished solution.
 	// If you leave them in, reviewers may protest!
-	panic("Please implement the IsLeapYear function")
+
+	if (year % 4 == 0 && year % 100 == 0 && year % 400 == 0) {
+		return true
+	} else if (year % 4 == 0 && year % 100 == 0) {
+		return false
+	} else if (year % 4 == 0) {
+		return true
+	} else {
+		return false
+	}
 }
